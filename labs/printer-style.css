@@ -14,8 +14,8 @@ main ins {
     background-color: white;
 }
 
-article main section::first-line {
-    line-height: 2em;
+article main section {
+    margin-top: 2em;
 }
 
 .table thead tr th {
