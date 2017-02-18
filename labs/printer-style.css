@@ -1,0 +1,31 @@
+img, .navigation-link, .sale-info, .feedback, .announcement {
+    display: none;
+}
+
+main strong {
+    font-weight: normal;
+}
+
+main ins {
+    text-decoration: none;
+}
+
+.table {
+    background-color: white;
+}
+
+article main section::first-line {
+    line-height: 2em;
+}
+
+.table thead tr th {
+    background-color: white;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: white;
+}
