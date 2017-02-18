@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../form-style.css"/>
+    <title>Форма обратной связи</title>
+</head>
+<body>
+<h1>Давайте познакомимся</h1>
+<!-- Начало формы -->
+<form action="">
+    <div class="row">
+        <div class="label"><label for="first_name">Ваше имя:</label></div>
+        <div class="field"><input type="text" name="first_name" id="first_name"/></div>
+    </div> <!-- Текстовое поле -->
+    <div class="row">
+        <div class="label"><label for="last_name">Ваша фамилия:</label></div>
+        <div class="field"><input type="text" name="last_name" id="last_name"/></div>
+    </div> <!-- Текстовое поле -->
+    <div class="row">
+        <div class="label">Кто вы?</div>
+        <div class="field">
+            <input type="radio" name="sex" value="male" id="sex_male"/>
+            <label for="sex_male">мужчина</label>
+        </div>
+        <div class="field">
+            <input type="radio" name="sex" value="female" id="sex_female"/>
+            <label for="sex_female">женщина</label>
+        </div>
+    </div> <!-- Радио кнопки -->
+    <div class="row">
+        <div class="label"><label for="job">Чем занимаетесь?</label></div>
+        <div class="field"><select name="job" id="job">
+            <option value=""></option>
+            <option value="schoolkid">школьник</option>
+            <option value="student">студент</option>
+            <option value="unemployed">безработный</option>
+            <option value="workman">рабочий класс</option>
+            <option value="office">офисный планктон</option>
+            <option value="creative">креативный класс</option>
+            <option value="egghead">интеллигент</option>
+            <option value="oligarch">олигарх</option>
+        </select>
+        </div>
+    </div> <!-- Выпадающий список -->
+    <div class="row">
+        <div class="field">
+            <textarea name="about" cols="30" rows="10" placeholder="Напишите коротко о себе"></textarea>
+        </div>
+    </div> <!-- Текст -->
+    <div class="row">
+        <div class="label">
+            <label for="agree">Я не буду воровать записи курсов</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" name="agreement" value="yes" id="agree"/>
+        </div>
+    </div> <!-- Флажок -->
+    <div>
+        <div class="field">
+            <input type="submit" value="Послать отзыв"/>
+        </div> <!-- Кнопка для отправки формы -->
+        <div class="field">
+            <input type="reset" value="Очистить форму"/>
+        </div> <!-- Кнопка для очистки формы -->
+    </div>
+</form>
+<!-- Конец формы -->
+</body>
+</html>
